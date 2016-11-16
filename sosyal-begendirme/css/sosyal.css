@@ -1,0 +1,163 @@
+
+
+/* Sağ Alt Popup
+-------------------------------------------------------------- */
+::-moz-selection {
+    background: #333;
+    color: #FFF;
+	text-shadow: none;
+}
+::selection {
+    background: #333;
+    color: #FFF;
+	text-shadow: none;
+}
+#main-image{
+    height: 0;
+    overflow: hidden;
+   -moz-animation: slide 1s ease 2s forwards;
+   -webkit-animation: slide 1s ease 2s forwards;
+   -o-animation: slide 1s ease 2s forwards;
+   -ms-animation: slide 1s ease 2s forwards;
+    animation: slide 1s ease 2s forwards;
+}
+
+
+@-moz-keyframes slide /* Firefox */
+{
+from {height: 0;}
+to {height: 300px;}
+}
+
+@-webkit-keyframes slide /* Safari and Chrome */
+{
+from {height: 0;}
+to {height: 300px;}
+}
+
+@-ms-keyframes slide /* IE10 */
+{
+from {height: 0;}
+to {height: 300px;}
+}
+
+@keyframes slide
+{
+from {height: 0;}
+to {height: 300px;}
+}
+
+.ress{
+	-webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+border-radius: 20px;
+float: right;
+	text-align: right;
+	margin-top: 10px;
+}
+
+.sagaltpop{
+	display: none;
+	position: fixed;
+	z-index: 99999;
+	right: 10px;
+	bottom: 0px;
+	max-width: 367px;
+	width: 90%;
+	height: auto;
+	font-family: verdana, arial, "times new roman";
+	font-size: 13px;
+	line-height: 19px;
+	color: #333;
+	border: 0;
+	border-radius: 3px 3px 0 0;
+	background-color: #F6F7F9;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, .3);
+}
+
+.popbaslik{
+	padding: 5px 10px;
+	background-color: #e7141b;
+	border: 0;
+	border-radius: 3px 3px 0 0;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, .3);
+	color: #FFF;
+	z-index: 9998;
+}
+
+.popbaslik a { float: right; color: #C5D9FF; padding: 2px 0; font-size: 1em; cursor: pointer;}
+.popbaslik a:hover { color: #FFF }
+
+.popicerik{
+	z-index: 1;
+	padding: 10px;
+}
+
+.popicerik a{ color: #333; text-decoration: none}
+.popicerik a:hover{ color: #264A97; text-decoration: none}
+
+.facebook-begen,
+.twitter-begen,
+.googleplus-begen{
+	float: left;
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px dotted #CCC;
+}
+
+.youtube-begen{
+	float: left;
+	display: block;
+	width: 100%;
+	padding-bottom: 10px;
+}
+
+.popicerik div{
+	float: left;
+	height: 40px;
+}
+
+.popicerik i{
+	float: left;
+	font-size: 3em;
+	margin-right: 10px;
+}
+
+.facebook-begen i { color: #3B5998; }
+.twitter-begen i { color: #1DA1F2; }
+.googleplus-begen i { color: #D73D32; }
+.youtube-begen i { color: #E62117; }
+
+.popicerik font{
+	font-size: 11px;
+	font-weight: bold;
+}
+.popicerik .fb-like{
+	float: right;
+	text-align: right;
+	margin-top: 10px;
+}
+
+.popicerik #twitter-widget-0{
+	float: right;
+	text-align: right;
+	margin: 10px 0;
+}
+
+.popicerik #___follow_0{
+	max-width: 120px !important;
+	float: right !important;
+	text-align: right !important;
+	margin: 10px 0 !important;
+}
+
+.popicerik #___ytsubscribe_0{
+	width: 86px!important;
+	float: right !important;
+	text-align: right !important;
+	margin: 8px 0 !important;
+}
+
+
